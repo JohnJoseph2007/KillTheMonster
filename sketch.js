@@ -18,7 +18,7 @@ function setup() {
   gr = new Ground(600, 700, 900, 20);
   hr = new Hero(250, 400);
   cnstrnt = new Constraint(hr.body, {x:250, y:100});
-  mn = new Monster();
+  monster = new Monster();
   //Level1 (6 boxes)
   a1 = new Boxes(475, 465 + 100);
   a2 = new Boxes(525, 465 + 100);
@@ -70,50 +70,45 @@ function draw() {
   gr.display();
   hr.display();
 
-    //level1.display();
-    a1.display();
-    a2.display();
-    a3.display();
-    a4.display();
-    a5.display();
-    a6.display();
-
-    b1.display();
-    b2.display();
-    b3.display();
-    b4.display();
-    b5.display();
-    b6.display();
-
-    c1.display();
-    c2.display();
-    c3.display();
-    c4.display();
-    c5.display();
-    c6.display();
-
-    d1.display();
-    d2.display();
-    d3.display();
-    d4.display();
-    d5.display();
-    d6.display();
-
-    e1.display();
-    e2.display();
-    e3.display();
-    e4.display();
-    e5.display();
-    e6.display();
-
-    f1.display();
-    f2.display();
-    f3.display();
-    f4.display();
-    f5.display();
-    f6.display();
-
-    mn.display();
+  //level1.display();
+  a1.display();
+  a2.display();
+  a3.display();
+  a4.display();
+  a5.display();
+  a6.display();
+  b1.display();
+  b2.display();
+  b3.display();
+  b4.display();
+  b5.display();
+  b6.display();
+  c1.display();
+  c2.display();
+  c3.display();
+  c4.display();
+  c5.display();
+  c6.display();
+  d1.display();
+  d2.display();
+  d3.display();
+  d4.display();
+  d5.display();
+  d6.display();
+  e1.display();
+  e2.display();
+  e3.display();
+  e4.display();
+  e5.display();
+  e6.display();
+  f1.display();
+  f2.display();
+  f3.display();
+  f4.display();
+  f5.display();
+  f6.display();
+  
+  monster.display();
 }
 
 function mouseDragged() {
@@ -125,3 +120,4 @@ function keyPressed() {
     window.location.reload();
   }
 }
+
